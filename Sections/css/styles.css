@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#setores{
+    height: 100%;
+    width: 100%;
+    <!-- background-color: #333333; -->
+    padding: 3em;
+
+}
+
+#setores .card{
+    background-color: #131313 !important;
+    border-radius: 10px !important;
+}
+
+#setores .card:hover{ 
+    box-shadow: 1px 2px 30px 1px rgba(239,50,51,1);
+}
+
+#setores .card .card-image{
+    text-align: center;
+    padding: 1em;
+}
+
+#setores .card .card-image i{
+    color: #EF3233;
+    font-size: 9vw;
+}
+
+#setores .card .card-image i:hover{
+    opacity: 0.9;
+}
+@media screen and (min-width: 1400px) {
+    #setores .card .card-image i {
+      font-size: 9em;
+    }
+  }
+
+#setores .card .card-content p{
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+    text-align: justify;
+}
+
+#setores .card .card-title h5{
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: honeydew;
+    font-size: 1.5em;   
+    text-shadow: 0 0 3px #131313, 0 0 5px #FF0000;
+}
+@media screen and (max-width: 1200px) {
+    #setores .card .card-title h5 {
+      font-size: 3vw;
+    }
+  }
+@media screen and (max-width: 600px) {
+    #setores .card .card-title h5 {
+        font-size: 1em;
+    }
+    #setores .card .card-image i {
+        font-size: 6em;
+    }
+}
