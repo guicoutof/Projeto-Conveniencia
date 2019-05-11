@@ -3,27 +3,28 @@
     padding: 0px;
 }
 
-/* Andrey */
+        /* Andrey */
 #NavBar{
     background-color: black;
 }
 
+#NavBar .brand-logo img{
+    width:  80%;
+    padding: 5px 5px 5px 10px;
+}
+
 #NavBar li a{
     font-size: 24px;
+    margin-right: 1vw;
 }
-
-#home{
-    margin: 0px;
-}
-.fotoDentro{
-    background-size: cover;
-    position: relative
-
+#NavBar li a:hover{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .parallax { 
     /* The image used */
-    background-image: url(../img/ampm.jpeg);
+    background-image: url(../img/conveniencia2.jpg);
 
     /* Set a specific height */
     height: auto; 
@@ -38,18 +39,37 @@
      
   }
 
-
-
-.estrela{
-    width: 80%;
+#home{
+    margin:0px;
 }
 
-/* Couto */
+            /* Felipe */
+#sobre{
+    padding-top: 60vw;
+    width: 50%;
+    margin-left: 50%;
+}
+
+#sobre .conteudo{
+    background-color: #131313;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+#sobre p{
+    color: white;
+    text-shadow: 0 0 10px #131313, 0 0 20px #131313;
+    font-family: 'Comfortaa', cursive;
+    text-align: justify;
+}
+
+
+            /* Couto */
 #setores{
     height: 100%;
     width: 100%;
     /* background-color: #333333; */
-    /* background-color: transparent; */
     padding: 3em;
     margin-top:500px; 
 
@@ -58,6 +78,7 @@
 #setores .card{
     background-color: #131313 !important;
     border-radius: 10px !important;
+    size: 80%;
 }
 
 #setores .card:hover{ 
@@ -75,13 +96,8 @@
 }
 
 #setores .card .card-image i:hover{
-    opacity: 0.9;
+    opacity: 0.7;
 }
-@media screen and (min-width: 1400px) {
-    #setores .card .card-image i {
-      font-size: 9em;
-    }
-  }
 
 #setores .card .card-content p{
     color: aliceblue;
@@ -97,39 +113,16 @@
     font-size: 1.5em;   
     text-shadow: 0 0 3px #131313, 0 0 5px #FF0000;
 }
-@media screen and (max-width: 1200px) {
-    #setores .card .card-title h5 {
-      font-size: 3vw;
-    }
-  }
-@media screen and (max-width: 600px) {
-    #setores .card .card-title h5 {
-        font-size: 1em;
-    }
-    #setores .card .card-image i {
-        font-size: 6em;
-    }
-}
 
-/* MD */
+
+        /* MD */
 .page{
 	display: block;
     height: 400px;	
     margin: 0px;	
 }
-	
-/* .pageHeader{
-	background-color: #FFC9FF;
-	float: left;
-	clear: none;
-	min-height: 150px;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 10px;
-	} */
 
 .pageLeftPanel{
-	/* background-color: #8B0000; */
 	float: left;
 	clear: none;
 	min-height: 425px;
@@ -138,67 +131,109 @@
 	padding: 11px; 
 	}
 	
-	
 .pageContent{
-    /* background-color: #363636;  */
-    
 	float: left;
 	clear: none;
-	/* min-height: 425px;
-	width: 695px; */
 	box-sizing: border-box;
 	padding: 11px;
-	}
-	
-
-
-
-.pageFooter{
-	
-	background-color: #131313;
-	float: left;
-	clear: none;
-	min-height: 50px;
-	width: 100%;
-	text-align: center;
-	box-sizing: border-box;
-	padding: 0px;
-	
-	}
+}
 
 .pageLeftPanel i{
     font-size: 2em;
-    margin-right: 1em;
-    display: inline;
-    align-items: center;
+    margin-right: 1vw;
 }
 
 .pageLeftPanel p{
     text-align: center;
     font-family: 'Comfortaa', cursive;
-    opacity: 0.9 !important;
-    color: #000;
+    color: black;
 }
 
 .pageLeftPanelBG{
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    opacity: 0.6;
-    align-items: center;
+    /*opacity: 0.8;*/
+    border-radius: 20px;
+    padding: 10px;
 }
 
-    
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .pageFooter {
     border-top: solid 3px #EF3233;
     margin: 0px;
     padding: 5px;
     background-color: #131313;
+    text-align: center;
     }
 
 .pageFooter p{
     color: white;
 }
 
+.pageFooter a{
+    align-items: center;
+}
 
-    
+.pageFooter i{
+    color: #EF3233;
+}
+
+        /*responsivo*/
+
+@media screen and (min-width: 1400px) {
+    #setores .card .card-image i {
+      font-size: 9em;
+    }
+  }
+
+@media screen and (max-width: 1200px) {
+    #setores .card .card-title h5 {
+      font-size: 3vw;
+    }
+  }
+            /*Mobile*/
+@media screen and (max-width: 600px) {
+    #setores .card .card-title h5 {
+        font-size: 1em;
+    }
+    #setores .card .card-image i {
+        font-size: 6em;
+    }
+    #sobre{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #NavBar .brand-logo img{
+        width:  60%;
+        padding: 5px 5px 5px 10px;
+    }
+    .pageLeftPanel{
+        width: 100% !important;
+    }
+
+    .pageContent{
+        width: 100% !important;
+        margin-top: 4vw;
+    }
+
+    .pageLeftPanel i{
+        margin-right: 5px;
+    }
+
+}
