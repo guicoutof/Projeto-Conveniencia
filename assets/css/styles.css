@@ -18,8 +18,12 @@
     margin-right: 1vw;
 }
 #NavBar li a:hover{
-    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+#NavBar li a img{
+    margin-right: 5px;
+    width: 20px;
 }
 
 .parallax { 
@@ -43,9 +47,31 @@
     margin:0px;
 }
 
+.tittle{
+    margin: 0px;
+    padding-top: 15vw;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: red;
+
+}
+
+.tittle p{
+    font-size: 5vw;
+    font-family: 'Ubuntu', sans-serif;
+    color: #EF3233;
+    text-shadow: 0 0 2px #FFFFFF;
+    text-align: center;
+    background-color: #131313;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px #EF3233;
+    /*padding: 4px;*/
+}
+
             /* Felipe */
 #sobre{
-    padding-top: 60vw;
+    padding-top: 30vw;
     width: 50%;
     margin-left: 50%;
 }
@@ -107,7 +133,7 @@
 
 #setores .card .card-title h5{
     margin: 0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: honeydew;
     font-size: 1.5em;   
@@ -234,6 +260,15 @@
 
     .pageLeftPanel i{
         margin-right: 5px;
+    }
+
+    .tittle{
+        width: 80%;
+    }
+
+    .tittle p{
+        border-radius: 4px;
+        font-size: 35px;
     }
 
 }
